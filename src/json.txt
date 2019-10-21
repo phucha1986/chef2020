@@ -1,0 +1,79 @@
+{ "discount": 12,
+  "currency": "AED",
+  "lounges": [
+    {"departAirPort": "Dubai International Airport",
+    "loungeType": "EMIRATES LOUNGE ACCESS",
+    "from": "Dubai",
+    "to": "Sydney",    
+    "airlineCode": "EK007",
+	"departDate": "25 Aug 2019, 05:00",
+    "airlineImage": "https://emirates-ibe-release.emea.tigerspike.com/system/deliverables/components/lounge-access-organizer/images/opr-emirates.png",
+    "passengers": [
+        {
+            "name": "Katy Chatrath",
+            "type": "Adult",
+            "tier": "BLUE",
+            "accompanied": 2,            
+            "price": 0
+        },
+        {
+            "name": "Thomas Philippaerts",
+            "type": "Adult",
+            "tier": "PLATINUM",
+            "accompanied": 1,            
+            "price": 0
+        },
+        {
+            "name": "Aditi Kant",
+            "type": "Adult",
+            "tier": "",
+            "accompanied": 0,            
+            "price": 400
+        },
+        {
+            "name": "Stepan Glukhovetskyi",
+            "type": "Teenager",
+            "tier": "",
+            "accompanied": 0,            
+            "price": 200
+        }
+    ]},
+	{"departAirPort": "London Hearthrow Airport",
+    "loungeType": "BUSINESS LOUNGE ACCESS",
+    "from": "London",
+    "to": "Dubai",    
+    "airlineCode": "QA998",
+	"departDate": "1 May 2019, 16:30",
+    "airlineImage": "https://emirates-ibe-release.emea.tigerspike.com/system/deliverables/components/lounge-access-organizer/images/opr-qantas.png",
+    "passengers": [
+        {
+            "name": "Antonio Buffon",
+            "type": "Adult",
+            "tier": "GOLD",
+            "accompanied": 3,            
+            "price": 0
+        },
+        {
+            "name": "Francesco Toldo",
+            "type": "Adult",
+            "tier": "PLATINUM",
+            "accompanied": 1,            
+            "price": 0
+        },
+        {
+            "name": "Christan Verri",
+            "type": "Adult",
+            "tier": "",
+            "accompanied": 0,            
+            "price": 150
+        },
+        {
+            "name": "Diego Nesta",
+            "type": "Teenager",
+            "tier": "",
+            "accompanied": 0,            
+            "price": 150
+        }
+    ]}
+  ]
+}

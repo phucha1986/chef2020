@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/bdbbb910-ce20-4d2d-86ac-dd3ebb5927bf/resourceGroups/Marvel/providers/Microsoft.Web/sites/Chef2020",
+    "appService.deploySubpath": ""
+}

@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.red{
+	color: red;
+}
+
+.drag-drop, .drag-drop img{    
+  width: 100px;
+  height: 100px;
+}
+.spoon, .spoon > div{
+  background: url("/images/spoon.png") no-repeat transparent;
+  background-size: contain;  
+}
+.glass, .glass > div{
+  background: url("/images/glass.png") no-repeat transparent;
+  background-size: contain;  
+}
+.plate, .plate > div{
+  background: url("/images/plate.png") no-repeat transparent;
+  background-size: contain;  
+}
+.chicken_salad, .chicken_salad > div{
+  background: url("/images/chicken_salad.png") no-repeat transparent;
+  background-size: contain;  
+}
+.sub
+{
+  padding-left: 10px;
+}
+.no-layout .gblcbk
+{
+  border: none;
+}
+ .no-layout .gblcbk .square,
+.no-layout .gblcbk .resizable-handler,
+.no-layout .gblcbk .rotate
+{
+  display: none;
+} 
+.food-container > div{
+  position: absolute;
+}
+.food-receipe {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 5px;
+}
+.food-receipe .name
+{
+  font-size: 18px;
+  font-weight: bold;  
+  padding-bottom: 10px;
+}
+.food-receipe .ingredient p
+{
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.food-receipe .ingredient div{
+  padding-bottom: 5px;
+}
