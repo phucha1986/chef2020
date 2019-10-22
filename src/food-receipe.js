@@ -6,7 +6,7 @@ function FoodReceipe() {
 	const [name, setName] = useState('');
 	const [steps, setSteps] = useState('');
 	function RetrieveData(){
-		fetch("http://localhost:57697/api/values/1")
+		fetch("http://mybapi.azurewebsites.net/api/values/1")
 			.then(res => res.json())
 			.then((result) => {
 				console.log(result);

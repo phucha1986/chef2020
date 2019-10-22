@@ -5,7 +5,7 @@ function FoodPresentation() {
 	const [name, setName] = useState('');
 	const [plating, setPlating] = useState('');
 	function RetrieveData(){
-		fetch("http://localhost:57697/api/values")
+		fetch("http://mybapi.azurewebsites.net/api/values")
 			.then(res => res.json())
 			.then((result) => {
 				console.log(result);	
