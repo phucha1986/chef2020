@@ -39,19 +39,19 @@
   width: 100px;
   height: 100px;
 }
-.spoon, .spoon > div{
+.spoon{
   background: url("/images/spoon.png") no-repeat transparent;
   background-size: contain;  
 }
-.glass, .glass > div{
+.glass{
   background: url("/images/glass.png") no-repeat transparent;
   background-size: contain;  
 }
-.plate, .plate > div{
+.plate{
   background: url("/images/plate.png") no-repeat transparent;
   background-size: contain;  
 }
-.chicken_salad, .chicken_salad > div{
+.chicken_salad{
   background: url("/images/chicken_salad.png") no-repeat transparent;
   background-size: contain;  
 }
@@ -63,7 +63,7 @@
 {
   border: none;
 }
- .no-layout .gblcbk .square,
+.no-layout .gblcbk .square,
 .no-layout .gblcbk .resizable-handler,
 .no-layout .gblcbk .rotate
 {

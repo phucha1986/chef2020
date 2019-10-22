@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Accordion, Image, List } from 'semantic-ui-react';
 function Item({item, className}) {		
 		
 	// const [left, setLeft] = useState(getPosition('x'));
@@ -9,26 +10,28 @@ function Item({item, className}) {
 	const [showLayout, setShowLayout] = useState(false);
 	const [steps, setSteps] = useState(item.attr.steps);
 	const [quantity, setQuantity] = useState(item.attr.quantity);	
-	className = item.attr.image;
+	className += " " + item.attr.image;
 	
     return (
 	
-		<React.Fragment>			
-			<div className={className}>
-				<div></div>
-				Name: {item.name}
-				{typeof item.subitems != "undefined" && item.subitems != null && item.subitems.length ?							
-					item.subitems.map(function(subitem, i) {								
-						return <Item className="sub" key={subitem.id} item={subitem}/>;
-					})
-				: null}
-				{item.attr.category != "receipe" ? <div>quantity: {quantity} </div> : null}				
-				{item.attr.category == "receipe" ? <div>steps: {typeof steps != "undefined" && steps.length ?					
-					steps.map(function(step, i) {								
-						return <div className="sub" key={i}>{step[0]}: {step[1]}</div>;
-					})
-				: null} </div> : null}
-			</div>					
+		<React.Fragment>					
+												
+				<div className={className}>
+					<Image avatar className={className} size='mini'/>
+					<List.Content>{item.name}</List.Content>
+					{typeof item.subitems != "undefined" && item.subitems != null && item.subitems.length ?							
+						item.subitems.map(function(subitem, i) {								
+							return <Item className="sub" key={subitem.id} item={subitem}/>;
+						})
+					: null}
+					{item.attr.category != "receipe" ? <div>quantity: {quantity} </div> : null}				
+					{item.attr.category == "receipe" ? <div>steps: {typeof steps != "undefined" && steps.length ?					
+						steps.map(function(step, i) {								
+							return <div className="sub" key={i}>{step}</div>;
+						})
+					: null} </div> : null}					
+				</div>
+												
 		</React.Fragment>
     );  
 }

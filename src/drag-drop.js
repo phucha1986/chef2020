@@ -50,10 +50,10 @@ function DragDrop({item, setItems, position}) {
 	{
 		setShowLayout(false);
 	}	
+	const style = {}
     return (
 	
-		<React.Fragment>			
-			<div className={className}>
+		<React.Fragment>						
 				{/* {position}
 				left{left}
 				top{top}
@@ -61,6 +61,7 @@ function DragDrop({item, setItems, position}) {
 				height{height}
 				rotate{rotateAngle} */}
 				<ResizableRect
+					className={className}					
 					left={left}
 					top={top}
 					width={width}
@@ -81,8 +82,7 @@ function DragDrop({item, setItems, position}) {
 					// onDragStart={this.handleDragStart}
 					onDrag={handleDrag}
 					onDragEnd={handleDragEnd}
-					/>
-			</div>					
+					/>				
 		</React.Fragment>
     );  
 }
