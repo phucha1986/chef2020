@@ -6,7 +6,7 @@ function CreateReceipe() {
 	const [steps, setSteps] = useState('');
 	const [search, setSearch] = useState('');
 	function RetrieveData(search){
-		fetch("http://localhost:57697/api/items/" + search)
+		fetch("http://mybapi.azurewebsites.net/api/items/" + search)
 			.then(res => res.json())
 			.then((result) => {
 				console.log(result);
